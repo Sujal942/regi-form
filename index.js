@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 
 const app = express();
 dotenv.config();
-const Port = process.env.PORT || 3001;
+const Port = process.env.PORT || 3000;
 
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
