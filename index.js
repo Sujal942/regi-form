@@ -44,10 +44,10 @@ app.post("/register", async (req, res) => {
         password,
       });
       await registrationData.save();
-      res.redirect("./pages/success");
+      res.redirect("/success");
     } else {
       console.log("user already exist");
-      res.redirect("./pages/error");
+      res.redirect("/error");
     }
   } catch (error) {
     console.log(error);
