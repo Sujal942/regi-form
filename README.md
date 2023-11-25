@@ -1,7 +1,7 @@
 # registration-form
 
 1. clone the repo.
-   using :- git clone <link>
+   using :- git clone link
 
 2. To install the modules:
    run :- npm install
