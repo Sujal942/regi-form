@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 
 const app = express();
 dotenv.config();
-const Port = process.env.PORT || 3000;
+const Port = process.env.PORT || 3001;
 
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
@@ -44,14 +44,14 @@ app.post("/register", async (req, res) => {
         password,
       });
       await registrationData.save();
-      res.redirect("/pages/success");
+      res.redirect("/success");
     } else {
       console.log("user already exist");
-      res.redirect("/pages/error");
+      res.redirect("/error");
     }
   } catch (error) {
     console.log(error);
-    res.redirect("/pages/error");
+    res.redirect("error");
   }
 });
 
